@@ -164,7 +164,39 @@ nav a {
 
 
 
-/********************content******************/
+/********************CONTENT START***********************/
+
+
+/******* PORTFOLIO START ********/
+
+#portfolio {
+    margin-top: 5rem;
+}
+
+#portfolio .sectionwrapper {
+    justify-content: center;
+}
+
+.column_portfolio {
+    flex-basis: 200px;
+    flex-grow: 1;
+    max-width: 350px;
+    margin: 1rem;
+}
+
+#portfolio img:hover {
+    transition: .5s ease;
+    transform: scale(1.07);
+}
+
+
+
+
+
+
+/****** PORTFOLIO SLUT********/
+
+
 
 
 
