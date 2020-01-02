@@ -1,14 +1,17 @@
 /**** GENERELLE TING ******/
 
-* {
-    box-sizing: border-box;
+
+
+section {
+    max-width: 1200px;
+    margin: auto;
 }
 
 body {
-    width: 100%;
-    height: 100%;
+
     background-color: #F3ECE6;
-    margin: 0;
+    margin: 0px;
+
 }
 
 
@@ -27,50 +30,100 @@ img {
 
 
 h1 {
+    text-align: center;
     font-family: 'Dancing Script', cursive;
     color: black;
-    font-size: 2rem;
-    margin-left: 10px;
+    font-size: 3rem;
+    margin-bottom: 0px;
+    margin-top: 3em;
     margin-bottom: 10px;
+    background-repeat: no-repeat;
+    padding: 2rem;
 
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    color: #9E593A;
+    font-size: 2rem;
+    margin-top: 5rem;
+    margin: 2rem;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size: 1.2rem;
+    margin: 2rem;
+    margin-bottom: 0;
 }
 
 p {
     font-family: 'Raleway', sans-serif;
     color: black;
     font-size: 1rem;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    line-height: 2;
 }
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.column {
+    flex-basis: 200px;
+    flex-grow: 1;
+    margin: 2rem;
+    margin-top: 5em;
+}
+
+/*.column_billede {
+    flex-basis: 200px;
+    flex-grow: 1;
+    color: white;
+    position: relative;
+    text-align: center;
+    margin: 2rem;
+}*/
 
 
 /****** GENERELLE TING SLUT ******/
 
+/**** TILBAGEKNAPPEN *****/
 
+.tilbage {
+    position: fixed;
+    top: 5vw;
+    left: 3vw;
+    max-width: 5rem;
+    overflow: visible;
+}
+
+/***** TILBAGE KNAPPEN SLUT *******/
 
 
 /**** MENU *****/
 
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+}
+
+
 
 nav a {
-    float: right;
-    color: black;
+    color: white;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     padding: 14px 17px;
-    text-decoration: none;
     font-size: 17px;
     text-decoration-line: none;
-
 }
 
-
-.hidden {
-    /*display: none;*/
-    /* transform_ scale(0);*/
-    transform: translateX(-100%);
-    opacity: 0;
-
-}
 
 #menuknap {
     display: inline-block;
@@ -99,24 +152,16 @@ nav a {
 }
 
 
-
 /***** MENU SLUT *****/
 
 
-/*****content*****/
+
+/********************content******************/
 
 
+/***** INTRO START *****/
 
-.sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-
-
-}
-
-/***** STILART START *****/
-
-#stilart .col1 {
+#intro {
     flex-grow: 1;
     flex-basis: 500px;
     flex-direction: column;
@@ -125,74 +170,84 @@ nav a {
     padding: 0;
     background-color: #F3ECE6;
 
-
-}
-
-#stilart .col2 {
-    flex-grow: 1;
-    flex-basis: 500px;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 50px;
-    padding: 0;
-    background-color: #F3ECE6;
-
-
-}
-
-#stilart .box {
-    flex-grow: 1;
-    background: #914E2F;
-    height: 500px;
-    width: 300px;
-
 }
 
 
-#stilart .image {
-    position: relative;
-    right: 30vw;
+/***** INTRO SLUT ******/
 
 
-
-}
-
-#stilart img {
-    border-radius: 50%;
-}
-
-/***** STILART SLUT ******/
-
-/****** OM MIG *******/
+/****** OM MIG START *******/
 
 #om .col1 {
     flex-grow: 1;
     flex-basis: 500px;
+    float: left;
     margin: 50px;
     padding: 0;
 
-
-
 }
 
-#om .col2 {
-    flex-grow: 1;
-    flex-basis: 500px;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 50px;
-    padding: 0;
-    background-color: #F3ECE6;
-
-
+#col1 .img {
+    float: right;
 }
-
-#om .image {
-    max-width: 100%;
-    height: auto;
-}
-
-
 
 
 /****** OM MIG SLUT *******/
+
+
+
+
+
+/******* WEBDESIGN START ********/
+
+
+
+.billede_webdesign {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.centered a:link {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    color: black;
+    background-color: white;
+
+}
+
+
+.centered a:hover {
+    color: black;
+}
+
+
+#webdesign {
+    border-bottom: 1px;
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding-bottom: 20px;
+    border-color: dimgrey;
+    margin-bottom: 5vw;
+}
+
+.billede_webdesign {
+    filter: opacity(80%);
+}
+
+.billede_webdesign:hover {
+    transition: 0.5s ease-out;
+    filter: opacity(100%);
+}
+
+/***** WEBDESIGN SLUT ******/
