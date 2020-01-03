@@ -20,14 +20,6 @@ img {
 }
 
 
-#splash {
-    width: 100%;
-    height: 100vh;
-    background-image: url(pictures/splashimage1.jpg);
-    background-position: 50%;
-    max-width: none;
-}
-
 
 h1 {
     text-align: center;
@@ -99,6 +91,37 @@ a {
 
 /****** GENERELLE TING SLUT ******/
 
+/**** SPLASHBILLEDE START ****/
+
+#splash {
+    width: 100%;
+    height: 100vh;
+    background-image: url(pictures/splashimage4.jpg);
+    background-position: 50%;
+    max-width: none;
+}
+
+
+
+/*#splash {
+    width: 100%;
+    height: 100vh;
+    background-position: 50%;
+    max-width: none;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+} */
+
+
+
+/***** SPLASHBILLEDE SLUT *****/
+
 /**** TILBAGEKNAPPEN *****/
 
 .tilbage {
@@ -121,8 +144,6 @@ header {
 
 }
 
-
-
 nav a {
     color: white;
     font-family: 'Raleway', sans-serif;
@@ -131,6 +152,7 @@ nav a {
     font-size: 17px;
     text-decoration-line: none;
 }
+
 
 
 #menuknap {
@@ -142,6 +164,8 @@ nav a {
     transition: transform .3s;
     transform-origin: top right;
 }
+
+
 
 @media only screen and (min-width: 600px) {
     #menuknap {
@@ -156,6 +180,8 @@ nav a {
     #menu li {
         display: inline-block;
     }
+
+
 
 }
 
