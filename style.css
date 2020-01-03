@@ -244,19 +244,22 @@ nav a {
     margin: 1rem;
 }
 
+.txt_portfolio {
+    flex-basis: 200px;
+    flex-grow: 1;
+    max-width: 350px;
+    margin: 1rem;
+    text-align: center;
+    font-size: 10px;
+}
+
 #portfolio img:hover {
     transition: .5s ease;
     transform: scale(1.07);
 }
 
 
-
-
-
-
 /****** PORTFOLIO SLUT********/
-
-
 
 
 
