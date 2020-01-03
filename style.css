@@ -58,6 +58,17 @@ p {
     line-height: 2;
 }
 
+.hbg {
+    background-image: url(pictures/paint1brownmini.png);
+    position: sticky;
+    width: 220px;
+    height: 135px;
+    margin: auto;
+
+
+}
+
+
 a {
     font-family: 'Raleway', sans-serif;
     color: black;
@@ -115,8 +126,12 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    font-size: 3rem;
 
-} */
+
+}*/
 
 
 
@@ -136,6 +151,14 @@ a {
 
 
 /**** MENU *****/
+
+.hidden {
+    transform: scale(0);
+}
+
+.siteheader {
+    display: none;
+}
 
 header {
     position: fixed;
@@ -163,6 +186,17 @@ nav a {
     list-style-type: none;
     transition: transform .3s;
     transform-origin: top right;
+}
+
+.mobilenav {
+    width: 100%;
+    background-color: #c9c9c9;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
 }
 
 
@@ -243,6 +277,7 @@ nav a {
     border-right: 0px;
     padding-bottom: 20px;
     border-color: gray;
+
 }
 
 
